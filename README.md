@@ -26,10 +26,10 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>High-Level Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Using the Microsoft Azure portal, create two virtual machines in the same virtual network
+- Using Remote Desktop connect to Virtual Machine 1 and download/ install Wireshark
+- Initiate communication between Virtual machine 1 and 2, and then analyze their traffic wit Wireshark.
+
 
 <h2>Actions and Observations</h2>
 
