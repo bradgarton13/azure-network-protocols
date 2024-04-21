@@ -34,25 +34,35 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>Actions and Observations</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![image](https://github.com/bradgarton13/azure-network-protocols/assets/166873905/56fb7f13-b704-4146-bc64-a211d6a48fc5)
+
+  
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+After launching any web browser and navigating to the Microsoft Azure Portal I created a resource group known as RGNetworkLab. Inside this resource group I created two virtual machines, one being a Window's 10 machine(VM1) and the other a Linux based machine(VM2).
+  During creation I made sure to put both of these machine inside the same virtual network;"VM1-vnet".
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![image](https://github.com/bradgarton13/azure-network-protocols/assets/166873905/e33dbd43-14ef-497d-865f-51e5bb2df751)
+
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+As displayed above, I used VM1 to communicate with VM2 in a few different ways. First I sent a normal and continuous ping command to VM2's private IP address on the virtual network. After that, I initiated a ssh connection with a user on VM2 and executed a few linux commands on the linux command line. One of the commands being pwd( print working directory) which displays the current working directory. I then exited the ssh connection with the exit command and verified I was back in the VM1 command line by executing the ipconfig command.
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![image](https://github.com/bradgarton13/azure-network-protocols/assets/166873905/2d5740b7-1e91-4ed3-b136-991679fec89c)
+
+
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Displayed above, I have installed and launched Wireshark to analyze some traffic on VM1. By using certain specifiers like dhcp, ssh, and dns in Wireshark's search bar, I'm able to filter for specific traffic. In the example above, I've filtered specifically for traffic from the SSH protocol that came from the ssh connection we initiated earlier with VM1 and VM2
 </p>
 <br />
