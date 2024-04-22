@@ -40,7 +40,8 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
   
 </p>
 <p>
-After launching any web browser and navigating to the Microsoft Azure Portal I created a resource group known as RGNetworkLab. Inside this resource group I created two virtual machines, one being a Window's 10 machine(VM1) and the other a Linux based machine(VM2).
+  After launching any web browser and navigating to the Microsoft Azure Portal I created a resource group known as RGNetworkLab. 
+  Inside this resource group I created two virtual machines, one being a Window's 10 machine(VM1) and the other a Linux based machine(VM2).
   During creation I made sure to put both of these machine inside the same virtual network;"VM1-vnet".
 </p>
 <br />
