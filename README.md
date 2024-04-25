@@ -40,7 +40,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
   
 </p>
 <p>
-  After launching any web browser and navigating to the Microsoft Azure Portal I created a resource group known as RGNetworkLab. 
+  After launching google chrome and navigating to the Microsoft Azure Portal I created a resource group known as RGNetworkLab. 
   Inside this resource group I created two virtual machines, one being a Window's 10 machine(VM1) and the other a Linux based machine(VM2).
   During creation I made sure to put both of these machine inside the same virtual network;"VM1-vnet".
 </p>
@@ -64,6 +64,6 @@ As displayed above, I used VM1 to communicate with VM2 in a few different ways. 
 
 </p>
 <p>
-Displayed above, I have installed and launched Wireshark to analyze some traffic on VM1. By using certain specifiers like dhcp, ssh, and dns in Wireshark's search bar, I'm able to filter for specific traffic. In the example above, I've filtered specifically for traffic from the SSH protocol that came from the ssh connection we initiated earlier with VM1 and VM2
+Displayed above, I have installed and launched Wireshark to analyze some traffic on VM1. By using certain specifiers like dhcp, ssh, and dns in Wireshark's search bar, I'm able to filter for specific traffic. In the example above, I've filtered specifically for traffic from the SSH protocol that came from the ssh connection we initiated earlier with VM1 and VM2.
 </p>
 <br />
